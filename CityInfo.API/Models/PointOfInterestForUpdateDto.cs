@@ -7,6 +7,8 @@ public class PointOfInterestForUpdateDto
     [Required(ErrorMessage = "You should provide a name value")]
     [MaxLength(50, ErrorMessage = "The max lenght is 50 characters")]
     public string Name { get; set; } = string.Empty;
+
+    [Required(ErrorMessage = "You should provide a description value")]
     [MaxLength(200, ErrorMessage = "The max lenght is 200 characters")]
-    public string? Description { get; set; }
+    public string? Description { get; set; } = string.Empty;
 }
